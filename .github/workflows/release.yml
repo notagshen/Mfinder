@@ -27,12 +27,12 @@ jobs:
           - os: "windows"
             arch: 'amd64'
             runs-on: 'windows-latest'
-          - os: "darwin"
-            arch: 'amd64'
-            runs-on: 'macos-13'
-          - os: "darwin"
-            arch: 'arm64'
-            runs-on: 'macos-latest'
+          # - os: "darwin"
+          #   arch: 'amd64'
+          #   runs-on: 'macos-13'
+          # - os: "darwin"
+          #   arch: 'arm64'
+          #   runs-on: 'macos-latest'
 
     runs-on: ${{ matrix.build.runs-on }}
     env:
